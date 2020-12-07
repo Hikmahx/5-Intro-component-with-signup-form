@@ -17,6 +17,7 @@ html{
   width: 100%;
   /* height: 125vh; */
   background: url(images/bg-intro-mobile.png) no-repeat, #ff7a7a ;
+  background-size: cover;
 }
 
 .banner{
@@ -28,15 +29,17 @@ html{
 }
 
 .banner h1{
-  width: 25rem;
+  width: 26rem;
+  font-weight: 600;
   margin: auto;
-  padding: 9rem 0 2.8rem 0;
-  font-size: 3rem;
+  padding: 9rem 0 1.8rem 0;
+  font-size: 2.8rem;
+  line-height: 1.4;
   /* font-weight: ; */
 }
 
 .banner p{
-  width: 28rem;
+  width: 31rem;
   margin: auto auto 6.5rem;
   /* padding-bottom: 2rem; */
   line-height: 1.6;
@@ -65,9 +68,11 @@ html{
 }
 
 .free-trial p{
-  width: 15rem;
+  width: 18rem;
   margin: auto;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
   /* text-align: center; */
 }
 
@@ -105,28 +110,34 @@ html{
   border: 0.1rem solid #b9b6d3;
   color: #3e3c49;
   font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
 .input-group input::placeholder{
   font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
 }
 
 .submit-btn{
   width: 100%;
   height: 5rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
   background: #38cc8c;
   color: #fff;
   border: none;
-  border-radius: 0.8rem;
-  margin: 0 auto 2rem auto;
+  border-radius: 0.5rem;
+  margin: 0 auto 1.5rem auto;
   box-shadow: 0rem 0.4rem 0rem 0rem rgba(53, 178, 126);
   text-transform: uppercase;
 }
 
 .text-info p{
   color: #b9b6d3;
-  width: 20rem;
+  font-size: 1.1rem;
+  width: 24rem;
   text-align: center
 }
 
@@ -134,3 +145,16 @@ html{
   color:  #ff7a7a;
   font-weight: 700;
 }
+
+@media(max-width:320px){
+  .banner p{
+    width: 25rem;
+  }
+
+  .input-group input{
+    width: 22rem;
+  }
+}
+/*Mobile view End*/
+
+
