@@ -15,7 +15,7 @@ html{
 
 .signup-sect{
   width: 100%;
-  /* height: 125vh; */
+  height: max-content;
   background: url(images/bg-intro-mobile.png) no-repeat, #ff7a7a ;
   background-size: cover;
 }
@@ -158,3 +158,107 @@ html{
 /*Mobile view End*/
 
 
+/* MEDIA QUERIES FOR TABLET AND DESKTOP */
+@media(min-width: 750px){
+  .signup-sect{
+    height: auto;
+    background: url(images/bg-intro-desktop.png) no-repeat, #ff7a7a;
+    background-size: cover;
+    background-position: center;
+  }
+  .contact{
+    height: 52rem;
+    max-width: 48rem;
+  }
+
+  .free-trial{
+    max-width: 48rem;
+  }
+
+  .free-trial p{
+    width: auto;
+  }
+
+  .input-group input{
+    width: 40rem;
+  }
+}
+
+@media(min-width:1023px){
+  .signup-sect{
+    background-size: cover;
+    /* background-position-x:center;
+    background-position-y: center; */
+    height: 100vh;
+    /* overflow: hidden; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner{
+    font-size: 1.6rem;
+    width: 88%;
+    /* margin:8rem 8rem 8rem 14rem; */
+    margin: auto 0 auto auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1;
+    align-items: center;
+  }
+
+  .banner h1{
+    margin: 0 0 2rem 0;
+    width: 44rem;
+    font-size: 5rem;
+    line-height: 1;
+    padding: 0;
+  }
+
+  .banner p{
+    margin: 0;
+    width: 44rem;
+  }
+  
+  .contact-wrapper{
+    /* display: flex;
+    align-items: center; */
+    width: 82%;
+    grid-column: 2;
+    display: flex;
+    margin: auto 0;
+    /* margin-left: -40rem; */
+  }
+  
+  .free-trial{
+    height: 6rem;
+    width: 90%;
+    max-width: 56rem;
+  }
+
+  .contact{
+    height: 45rem;
+    margin: 0;
+    width: 90%;
+    max-width:56rem;
+  }
+
+  .input-group input{
+    width: 34rem;
+  }
+
+  .text-info p {
+    width: auto;
+  }
+}
+
+
+@media(min-width:1300px){
+  .input-group input{
+    width: 44rem;
+  }
+}
