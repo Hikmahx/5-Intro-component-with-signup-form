@@ -48,6 +48,15 @@ form.addEventListener('submit', (e)=>{
   e.preventDefault();
 });
 
+form.addEventListener('input', (e)=>{
+  // console.log(e.target.nextElementSibling.className)
+  if(e.target.nextElementSibling.classList.contains('error') ||
+     e.target.nextElementSibling.classList.contains('error-icon')){
+    e.target.nextElementSibling.remove();
+    e.target.nextElementSibling.remove();
+  }
+})
+
 // fields.forEach(field=>{
 //   form.addEventListener('keyup', (e)=>{
 //     document.querySelector('.error-icon').style.display = 'none';
