@@ -113,13 +113,28 @@ html{
   font-family: 'Poppins', sans-serif;
 }
 
+
+.error-icon{
+  position: absolute;
+  top: 1.4rem;
+  right: 2rem;
+}
+
+.error{
+  position: absolute;
+  right:0rem;
+  bottom: 0.4rem;
+  color: red;
+  font-style: italic;
+}
+
 .input-group input::placeholder{
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
 }
 
-.input-group input[type="text"]:focus{
+.input-group input:focus{
   border-color: #000;
 }
 
