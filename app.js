@@ -111,7 +111,21 @@ function validateLast(e) {
   }
 }
 
+function validateEmail(e) {
+  const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 
+  if(!re.test(email.value)){
+    let name = email.getAttribute('name');
+    let id  = email;
+    e.target.parentElement.style.position = 'relative';
+    errorDisplay(name, id);
+
+    preventSameErrors(e);
+  }
+  else{
+    console.log(`Email: ${e.target.value}`);
+  }
+}
 
 function errorDisplay(name, id){
   // Create error text
