@@ -56,11 +56,3 @@ form.addEventListener('input', (e)=>{
     e.target.nextElementSibling.remove();
   }
 })
-
-// fields.forEach(field=>{
-//   form.addEventListener('keyup', (e)=>{
-//     document.querySelector('.error-icon').style.display = 'none';
-//     document.querySelector('.error').style.display = 'none';
-  
-//   })
-// })
