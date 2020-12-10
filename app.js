@@ -45,7 +45,16 @@ form.addEventListener('submit', (e)=>{
       errIcon.innerHTML = '<img src="images/icon-error.svg" alt="icon-error">'
       input.appendChild(errIcon);
 
-
+      /* Prevents mutliple instances of the same error from inserting and
+       removes validation err if present */
+      inputs.forEach(input=>{
+        if(input.childElementCount >3){
+          if(input.children[1].innerHTML.includes('valid')){
+            input.children[1].remove();
+          }
+          input.lastElementChild.remove();
+        }
+      })
 
     }else{ 
       e.target.nextElementSibling.remove();
