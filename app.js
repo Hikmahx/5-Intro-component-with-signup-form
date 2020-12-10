@@ -5,6 +5,12 @@ const inputs = document.querySelectorAll('.input-group');
 const fields = document.querySelectorAll('.field');
 const contact = document.querySelector('.contact');
 
+const firstName = document.getElementById('firstname');
+const lastName = document.getElementById('lastname');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+
+
 
 // Listen for submit
 form.addEventListener('submit', (e)=>{
@@ -39,8 +45,10 @@ form.addEventListener('submit', (e)=>{
       errIcon.innerHTML = '<img src="images/icon-error.svg" alt="icon-error">'
       input.appendChild(errIcon);
 
-    }else{ 
 
+
+    }else{ 
+      e.target.nextElementSibling.remove();
     }
 
   })
@@ -56,3 +64,12 @@ form.addEventListener('input', (e)=>{
     e.target.nextElementSibling.remove();
   }
 })
+
+// Form Blur Event Listeners
+firstName.addEventListener('blur', validateFirst);
+lastName.addEventListener('blur', validateLast);
+email.addEventListener('blur', validateEmail);
+password.addEventListener('blur', validatePassword);
+
+
+
