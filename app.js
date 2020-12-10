@@ -81,4 +81,34 @@ email.addEventListener('blur', validateEmail);
 password.addEventListener('blur', validatePassword);
 
 
+function validateFirst(e) {
+  const re = /^[a-zA-Z]{2,10}(\s?)$/;
+  if(!re.test(firstName.value)){
+    let name = firstName.getAttribute('name');
+    let id  = firstName;
+    e.target.parentElement.style.position = 'relative';
+    errorDisplay(name,id);
 
+    preventSameErrors(e);
+  }
+  else{
+    console.log(`First Name: ${e.target.value}`);
+  }
+}
+
+
+function errorDisplay(name, id){
+  // Create error text
+  // e.target.style.color = 'red';
+  const err = document.createElement('p');
+  err.className = 'error';
+  err.appendChild(document.createTextNode(`Looks like this is not a valid ${name}`));
+  id.parentElement.appendChild(err);
+}
+
+function preventSameErrors(e){
+    // Prevents mutliple instances of the same error from inserting
+    if(e.target.parentElement.childElementCount >2){
+      e.target.parentElement.lastElementChild.remove();
+    }
+}
