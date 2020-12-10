@@ -96,6 +96,22 @@ function validateFirst(e) {
   }
 }
 
+function validateLast(e) {
+  const re = /^[a-zA-Z]{2,15}(\s?)$/;
+  if(!re.test(lastName.value)){
+    let name = lastName.getAttribute('name');
+    let id  = lastName;
+    e.target.parentElement.style.position = 'relative';
+    errorDisplay(name, id);
+
+    preventSameErrors(e);
+  }
+  else{
+    console.log(`Last Name: ${e.target.value}`);
+  }
+}
+
+
 
 function errorDisplay(name, id){
   // Create error text
