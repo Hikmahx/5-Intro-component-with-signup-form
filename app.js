@@ -93,6 +93,7 @@ function validateFirst(e) {
   }
   else{
     console.log(`First Name: ${e.target.value}`);
+    e.target.classList.remove('red');
   }
 }
 
@@ -108,6 +109,7 @@ function validateLast(e) {
   }
   else{
     console.log(`Last Name: ${e.target.value}`);
+    e.target.classList.remove('red');
   }
 }
 
@@ -124,6 +126,7 @@ function validateEmail(e) {
   }
   else{
     console.log(`Email: ${e.target.value}`);
+    e.target.classList.remove('red');
   }
 }
 
@@ -139,6 +142,7 @@ function validatePassword(e) {
   }
   else{
     console.log(`Password: ${e.target.value}`);
+    e.target.classList.remove('red');
   } 
 }
 
@@ -150,6 +154,7 @@ function errorDisplay(name, id){
   err.className = 'error';
   err.appendChild(document.createTextNode(`Looks like this is not a valid ${name}`));
   id.parentElement.appendChild(err);
+  id.classList.add('red');
 }
 
 function preventSameErrors(e){
