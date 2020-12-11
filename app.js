@@ -70,6 +70,7 @@ form.addEventListener('input', (e)=>{
      e.target.nextElementSibling.classList.contains('error-icon')){
     e.target.nextElementSibling.remove();
     e.target.nextElementSibling.remove();
+    e.target.style.borderColor = 'initial';
   }
 })
 
@@ -161,3 +162,16 @@ function preventSameErrors(e){
       e.target.parentElement.lastElementChild.remove();
     }
 }
+
+// Validate all inputs
+form.addEventListener('submit', (e)=>{
+  if(firstName.value !=='' && lastName.value !=='' && email.value !=='' && password.value !=='' &&
+     !firstName.classList.contains('red') && !lastName.classList.contains('red') &&
+     !email.classList.contains('red') && !password.classList.contains('red')){
+    form.submit();
+  }else{
+    console.log('not submitted');
+  }
+
+  e.preventDefault();
+})
