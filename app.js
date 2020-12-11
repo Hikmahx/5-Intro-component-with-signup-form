@@ -66,13 +66,13 @@ form.addEventListener('submit', (e)=>{
 });
 
 form.addEventListener('input', (e)=>{
-  // console.log(e.target.nextElementSibling.className)
   if(e.target.nextElementSibling.classList.contains('error') ||
      e.target.nextElementSibling.classList.contains('error-icon')){
     e.target.nextElementSibling.remove();
     e.target.nextElementSibling.remove();
   }
 })
+
 
 // Form Blur Event Listeners
 firstName.addEventListener('blur', validateFirst);
@@ -148,8 +148,6 @@ function validatePassword(e) {
 
 
 function errorDisplay(name, id){
-  // Create error text
-  // e.target.style.color = 'red';
   const err = document.createElement('p');
   err.className = 'error';
   err.appendChild(document.createTextNode(`Looks like this is not a valid ${name}`));
