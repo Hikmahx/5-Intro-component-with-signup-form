@@ -128,6 +128,11 @@ html{
   font-style: italic;
 }
 
+.input-group input.red {
+  color: red;
+  border-color: red;
+}
+
 .input-group input::placeholder{
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
@@ -136,6 +141,7 @@ html{
 
 .input-group input:focus{
   border-color: #000;
+  color:#3e3c49;
 }
 
 .submit-btn{
