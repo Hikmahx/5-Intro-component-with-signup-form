@@ -56,8 +56,6 @@ form.addEventListener('submit', (e)=>{
         }
       })
 
-    }else{ 
-      e.target.nextElementSibling.remove();
     }
 
   })
