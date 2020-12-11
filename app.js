@@ -127,6 +127,22 @@ function validateEmail(e) {
   }
 }
 
+function validatePassword(e) {
+  if(!/[a-z]/.test(password.value) || !/[A-Z]/.test(password.value) ||
+     !/[0-9]/.test(password.value) || password.value.length <6){
+    let name = password.getAttribute('name');
+    let id  = password;
+    e.target.parentElement.style.position = 'relative';
+    errorDisplay(name, id);
+
+    preventSameErrors(e);
+  }
+  else{
+    console.log(`Password: ${e.target.value}`);
+  } 
+}
+
+
 function errorDisplay(name, id){
   // Create error text
   // e.target.style.color = 'red';
