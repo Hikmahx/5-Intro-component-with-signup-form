@@ -214,7 +214,6 @@ html {
   }
 }
 
-/*Mobile view End*/
 @media (min-width: 560px) {
   .signup-sect {
     background-image: url(../images/bg-intro-desktop.png);
@@ -256,7 +255,6 @@ html {
 
 @media (min-width: 1150px) {
   .signup-sect {
-    /* background-size: cover; */
     background-size: 98% 100vh;
     height: 100vh;
     display: -ms-grid;
@@ -317,7 +315,6 @@ html {
     width: 90%;
     max-width: 56rem;
     margin-bottom: 2.8rem;
-    /* margin-top: 1vh; */
   }
   .contact {
     height: 46rem;
@@ -368,7 +365,6 @@ html {
     height: 5.8rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
-    /* margin-bottom: 2.5rem; */
   }
 }
 /*# sourceMappingURL=style.css.map */
