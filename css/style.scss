@@ -1,0 +1,327 @@
+/* MOBILE FIRST */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  html{
+    font-size: 62.5%;
+    font-family:'Poppins', sans-serif;
+  }
+  
+  .signup-sect{
+    width: 100%;
+    height: max-content;
+    background: url(../images/bg-intro-mobile.png) no-repeat, #ff7a7a ;
+    background-size: cover;
+  }
+  
+  .banner{
+    width: 100%;
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .banner h1{
+    width: 26rem;
+    font-weight: 600;
+    margin: auto;
+    padding: 9rem 0 1.8rem 0;
+    font-size: 2.8rem;
+    line-height: 1.4;
+  }
+  
+  .banner p{
+    width: 31rem;
+    margin: auto auto 6.5rem;
+    line-height: 1.6;
+  }
+  
+  .contact-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .free-trial{
+    background:  #6055a5;
+    width: 87%;
+    max-width: 40rem;
+    height: 9rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.8rem 0rem 0rem rgba(0, 0, 0,0.15);
+    margin: auto;
+    border: none;
+    margin-bottom: 2.4rem;
+    color:#fff;
+    font-size: 1.4rem;
+  }
+  
+  .free-trial p{
+    width: 18rem;
+    margin: auto;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .contact{
+    width:87%;
+    max-width: 40rem;
+    height: 44rem;
+    border-radius: 1rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 7rem;
+    box-shadow: 0rem 0.8rem 0rem 0rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .input-group input{
+    width: 28rem;
+    height: 5.4rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding-left: 1.6rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #b9b6d3;
+    color: #3e3c49;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  .error-icon{
+    position: absolute;
+    top: 1.4rem;
+    right: 2rem;
+  }
+  
+  .error{
+    position: absolute;
+    right:0rem;
+    bottom: 0.4rem;
+    color: red;
+    font-style: italic;
+  }
+  
+  .input-group input.red {
+    color: red;
+    border-color: red;
+  }
+  
+  .input-group input::placeholder{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+  }
+  
+  .input-group input:focus{
+    border-color: #000;
+    color:#3e3c49;
+  }
+  
+  .submit-btn{
+    width: 100%;
+    height: 5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    background: #38cc8c;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0rem 0.4rem 0rem 0rem rgb(53, 178, 126);
+    text-transform: uppercase;
+  }
+  
+  .text-info p{
+    color: #b9b6d3;
+    font-size: 1.1rem;
+    width: 24rem;
+    text-align: center
+  }
+  
+  .text-info span{
+    color:  #ff7a7a;
+    font-weight: 700;
+  }
+  
+  @media(max-width:320px){
+    .banner p{
+      width: 25rem;
+    }
+  
+    .input-group input{
+      width: 22rem;
+    }
+  }
+  
+  @media(min-width: 430px){
+   .input-group input{
+     width: 34rem;
+   }
+  }
+  /*Mobile view End*/
+  
+  @media(min-width: 560px){
+    .signup-sect{
+      background-image: url(../images/bg-intro-desktop.png);
+    }
+  }
+  
+  /* MEDIA QUERIES FOR TABLET AND DESKTOP */
+  @media(min-width: 750px){
+    .signup-sect{
+      height: auto;
+      background: url(../images/bg-intro-desktop.png) no-repeat, #ff7a7a;
+      background-size: cover;
+      background-position: center;
+    }
+    .contact{
+      height: 52rem;
+      max-width: 48rem;
+    }
+  
+    .free-trial{
+      max-width: 48rem;
+    }
+  
+    .free-trial p{
+      width: auto;
+    }
+  
+    .input-group input{
+      width: 40rem;
+    }
+  }
+  
+  @media (min-height: 905px) and (max-width: 990px) {
+    .signup-sect{
+      height: 100vh;
+    }
+
+    .banner h1{
+      font-size: 4rem;
+      width: 44rem;
+    }
+  }
+  
+  @media(min-width:1150px){
+    .signup-sect{
+      /* background-size: cover; */
+      background-size: 98% 100vh;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 51%;
+    }
+  
+    .banner{
+      font-size: 1.6rem;
+      width: 89%;
+      margin: auto 0 auto auto;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-column: 1;
+      align-items: center;
+      margin-left: 10.5rem;
+      margin-top: 37vh;
+  
+    }
+  
+    .banner h1{
+      margin: 0 0 2rem 0;
+      width: 51rem;
+      font-size: 5rem;
+      line-height: 1;
+      padding: 0;
+      line-height: 6rem;
+      margin-bottom: 3.8rem;
+      font-weight: 700;
+    }
+  
+    .banner p{
+      margin: 0;
+      width: 51rem;
+      line-height: 2.8rem;
+    }
+    
+    .contact-wrapper{
+      width: 82%;
+      grid-column: 2;
+      display: flex;
+      margin: auto 0;
+      margin-left: -0.5rem;
+    }
+    
+    .free-trial{
+      height: 6.5rem;
+      width: 90%;
+      max-width: 56rem;
+      margin-bottom: 2.8rem;
+      /* margin-top: 1vh; */
+    }
+  
+    .contact{
+      height: 46rem;
+      margin: 0;
+      width: 90%;
+      max-width:56rem;
+    }
+  
+    .input-group input{
+      width: 41rem;
+      padding-left: 2.9rem;
+      font-size: 1.5rem;
+    }
+  
+    .input-group input::placeholder{
+      font-size: 1.5rem;
+    }
+  
+    .text-info p {
+      width: auto;
+      margin-top:0.7rem;
+    }
+  
+    .submit-btn:hover{
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+  
+  @media(min-width:1400px){
+    #signup-form{
+      margin-top: -0.3rem;
+    }
+  
+    .contact{
+      height: 53.5rem;
+    }
+  
+    .input-group input{
+      width: 46rem;
+      margin-bottom: 2.2rem;
+      height: 6.4rem;
+    }
+  
+    .submit-btn{
+      height: 5.8rem;
+      font-weight: 400;
+      letter-spacing: 0.1rem;
+      /* margin-bottom: 2.5rem; */  
+    }
+  }
